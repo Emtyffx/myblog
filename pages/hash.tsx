@@ -28,10 +28,6 @@ const Hash = () => {
       },
     })
       .then((res) => setHash(res.data.hash))
-      .catch((res) => console.log(res.data, algoRef.current?.value));
-  };
-  const copyHash: MouseEventHandler<HTMLButtonElement> = (event) => {
-    window.navigator.clipboard.writeText(hash)
       .then(() => {
         toast.success("Hash copied!", {
           position: "top-right",
@@ -44,22 +40,9 @@ const Hash = () => {
           theme: "dark",
         });
       })
-      .catch(() => {
-        toast.error("Error!", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
-      })
-
-    ;
-
+      .catch((res) => console.log(res.data, algoRef.current?.value));
   };
+
   const darkTheme = useAppSelector((store) => store.theme.darkTheme);
   return (
     <div
@@ -74,7 +57,7 @@ const Hash = () => {
       </Head>
       <TopBar />
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-2">
         <form action="" className="-ml-1 md:pr-2 md:w-96" onSubmit={submitHandler}>
           <div className="form-control">
             <label className="label">
@@ -132,11 +115,7 @@ const Hash = () => {
                   ""
                 )}
               </div>
-              <div className="flex-none">
-                <button className="btn btn-sm" onClick={copyHash}>
-                  Copy
-                </button>
-              </div>
+
             </div>
           )}
         </form>

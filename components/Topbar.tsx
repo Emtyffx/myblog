@@ -30,7 +30,7 @@ export const TopBar = () => {
   }, [toggleRef]);
   return (
     <nav
-      className={`flex flex-row bg-base-100 justify-between items-center fixed top-0 left-0 w-full py-3 px-5 border-b ${""}`}
+      className={`navbar z-20 bg-opacity-80 backdrop-blur flex flex-row bg-base-100 justify-between items-center fixed top-0 left-0 w-full py-3 px-5 border-b ${""}`}
     >
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -51,7 +51,7 @@ export const TopBar = () => {
         </label>
         <ul
           tabIndex={0}
-          className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
+          className="bg-base-100 bg-opacity-90 backdrop-blur-xl border-2 menu menu-compact dropdown-content mt-3 p-2 shadow-xl rounded-box w-52"
         >
           <li>
             <Link href={"/"}>Homepage</Link>
