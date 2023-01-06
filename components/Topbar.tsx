@@ -30,9 +30,7 @@ export const TopBar = () => {
   }, [toggleRef]);
   return (
     <nav
-      className={`flex flex-row bg-base-100 ${
-        currentTheme == "white" ? "bg-white" : "bg-slate-900"
-      } justify-between items-center fixed top-0 left-0 w-full py-3 px-5 border-b ${""}`}
+      className={`flex flex-row bg-base-100 justify-between items-center fixed top-0 left-0 w-full py-3 px-5 border-b ${""}`}
     >
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost btn-circle">
