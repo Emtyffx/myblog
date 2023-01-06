@@ -23,7 +23,7 @@ export const TopBar = () => {
     document.getElementById("toggle_theme")?.addEventListener("click", () => {
       setCurrentTheme(currentTheme == "dark" ? "light" : "dark");
     });
-  }, [currentTheme, setCurrentTheme]);
+  }, []);
   const toggleRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     console.log(toggleRef.current?.classList);
