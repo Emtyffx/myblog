@@ -24,7 +24,6 @@ export const HomeHeader = () => {
           "C#",
           "React",
           "Vue",
-          
         ]}
         eraseDelay={1000}
         typingDelay={500}
