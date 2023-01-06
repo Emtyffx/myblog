@@ -29,7 +29,7 @@ const Hash = () => {
     })
       .then((res) => setHash(res.data.hash))
       .then(() => {
-        toast.success("Hash copied!", {
+        toast.success("Hash created!", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
