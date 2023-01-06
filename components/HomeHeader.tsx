@@ -30,13 +30,13 @@ export const HomeHeader = () => {
         staticText={"I can program on"}
       />
       <div className=" border-t-2 mt-3 flex p-3 flex-row justify-center items-center">
-        <a href="#" className="mx-1.5">
+        <a href="https://github.com/Emtyffx" className="mx-1.5">
           <VscGithub size={32} />
         </a>
-        <a href="#" className="mx-1.5">
+        <a href="https://t.me/WxCEmtyf" className="mx-1.5">
           <BsTelegram size={32} />
         </a>
-        <a href="#" className="mx-1.5">
+        <a href="mailto:p.verbytsky@gmail.com" className="mx-1.5">
           <FiMail size={32} />
         </a>
       </div>
